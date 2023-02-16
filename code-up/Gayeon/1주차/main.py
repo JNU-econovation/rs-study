@@ -127,6 +127,7 @@ for i in range(1, a+1):
     n += i
 
 print(n)
+
 #6078
 i = input()
 while i != 'q':
@@ -168,3 +169,5 @@ for i in range(1,k+1):
         print("X",end=" ")
     else:
         print(i,end=" ")
+
+# 종합 6083
