@@ -199,7 +199,7 @@ while hap < n:
 
 print(i-1)
 
-#6080 종합
+# 6080 종합
 n, m = input().split(' ')
 n = int(n)
 m = int(m)

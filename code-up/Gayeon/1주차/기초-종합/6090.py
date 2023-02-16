@@ -1,5 +1,5 @@
 a, b, c, d = input().split()
-a= int(a)
+a = int(a)
 b= int(b)
 c= int(c)
 d= int(d)

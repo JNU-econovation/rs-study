@@ -1,5 +1,5 @@
 a = int(input())
-n=1
+n =1
 hap=0
 while True:
     hap+=n

@@ -5,7 +5,7 @@ for i in range(10):
     arr[i]=list(map(int, input().split()))
 x=1
 y=1
-while x<=8:
+while x<=8 :
     if arr[x][y]==0:
         arr[x][y]=9
         y+=1
