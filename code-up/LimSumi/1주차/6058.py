@@ -1,0 +1,5 @@
+a=int(input())
+b=int(input())
+c=bool(a)
+d=bool(b)
+print((not c) and (not b))
