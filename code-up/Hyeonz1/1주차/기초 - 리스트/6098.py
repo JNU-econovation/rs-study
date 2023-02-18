@@ -12,3 +12,29 @@ cheeseMap = [list(map(int, input().split())) for _ in range(10)]
     # 3. position[x][y] == 2
 
 cp = [1, 1] # cp[0]: 현재 개미 x좌표, cp[1]: 현재 개미 y좌표, position[cp[0]][cp[1]]
+cheeseMap[cp[0]][cp[1]] = 9
+# 1. 벽에 부딪히기 전까지 오른쪽으로 움직인다.
+# 2. 오른쪽에 벽이 안나올 때까지 아래로 이동한다.
+# 1, 2번을 멈추는 조건을 만족하기 전까지 반복한다.
+
+while cheeseMap[cp[0]][cp[1]] != cheeseMap[8][8] and (cheeseMap[cp[0] + 1][cp[1]] != 1 or cheeseMap[cp[0]][cp[1] + 1] != 1) and cheeseMap[cp[0] + 1][cp[1]] == 2 and cheeseMap[cp[0]][cp[1] + 1] == 2:
+    for y in range(7):
+        if cheeseMap[cp[0]][cp[1] + y] == 1:
+            break
+        else:
+            cheeseMap[cp[0]][cp[1] + y] == 9
+            cp[1] += 1
+    
+    for x in range(7):
+        if cheeseMap[cp[0]][cp[1] + 1] == 0:
+            break
+        else:
+            cheeseMap[cp[0] + x][cp[1]] == 9
+            cp[0] += 1
+
+for i in range(len(cheeseMap)):
+    for j in range(len(cheeseMap[i])):
+        print(cheeseMap[i][j], end = " ")
+    print("")
+
+
