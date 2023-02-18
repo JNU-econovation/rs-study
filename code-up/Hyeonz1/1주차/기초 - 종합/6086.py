@@ -1,9 +1,9 @@
 number = int(input())
-n = 1
-sum = n * (n + 1) / 2
+n = 0
+sum = 0
 
 while number > sum:
     n += 1
-    sum = n * (n + 1) / 2
+    sum += n
 
 print(int(sum))

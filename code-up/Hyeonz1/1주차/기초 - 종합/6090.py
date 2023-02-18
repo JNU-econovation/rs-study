@@ -1,11 +1,6 @@
-a, m, d, n = input().split()
+a, m, d, n = map(int, input().split())
 
-a = int(a)
-m = int(m)
-d = int(d)
-n = int(n)
-
-for i in range(1, n):
+for i in range(n):
     a *= m
     a += d
 

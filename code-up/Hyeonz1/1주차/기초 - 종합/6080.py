@@ -1,8 +1,6 @@
-n, m = input().split()
+# 내용 : 나올 수 있는 주사위의 숫자를 오름차순으로 출력한다.
+n, m = map(int, input().split())
 
-n = int(n)
-m = int(m)
-
-for i in range(1, n+1):
-    for j in range(1, m+1):
-        print(i, j)
+for i in range(n):
+    for j in range(m):
+        print(i + 1, j + 1)
