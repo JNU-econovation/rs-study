@@ -1,5 +1,0 @@
-a=int(input())
-b=int(input())
-c=bool(a)
-d=bool(b)
-print(c!=d)
