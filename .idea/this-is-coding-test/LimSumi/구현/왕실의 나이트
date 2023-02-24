@@ -1,0 +1,19 @@
+locate=input()
+array1=list(range(ord('a'), ord('b')))
+array2= list(range(1,8))
+
+a=int(locate[1])
+c=locate[0]
+b=ord(c)
+sum=8
+if (a<2 or a>7):
+    sum=sum-2
+elif (a<3 or a>6):
+    sum=sum-2
+if (b<62 or b>67):
+    sum=sum-2
+elif(b<63 or b>66):
+    sum=sum-1
+
+print(sum)
+#함께

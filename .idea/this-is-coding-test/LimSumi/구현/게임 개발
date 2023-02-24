@@ -1,0 +1,10 @@
+N,M=map(int, input().split())
+a,b,c=map(int, input().split())
+ch=[a,b]
+array1=map(int, input().split())
+array2=map(int, input().split())
+array3=map(int, input().split())
+array4=map(int, input().split())
+
+if ()
+#불가능
