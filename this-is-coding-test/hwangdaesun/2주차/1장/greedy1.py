@@ -6,5 +6,8 @@ ilist = list(map(int,input().split()))
 ilist.sort(reverse=True)
 
 
-print((ilist[0]*k+ilist[1])*(m // (k+1)) +ilist[1]*(m % (k+1)))
+print((ilist[0]*k+ilist[1])*(m // (k+1)) +ilist[0]*(m % (k+1)))
+
+# 제일 큰 수 + 그 다음 큰 수밖에 사용을 하지 않음 결국 (제일 큰 수 반복, 1번 그 다음) 반복을 하는 데 
+# 
 
