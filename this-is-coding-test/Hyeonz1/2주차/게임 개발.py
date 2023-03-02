@@ -1,5 +1,5 @@
 n, m = map(int, input().split())
-x, y, d = map(int, input().split())
+col, row, d = map(int, input().split())
 my_map = [list(map(int, input().split())) for _ in range(m)]
 
 # 1. 현재 방향을 기준으로 왼쪽 방향으로 돈다.
@@ -16,7 +16,8 @@ dy = [-1, 0, 1, 0]
 movement = 0
 cur_x, cur_y = x, y
 
-my_map[x][y] = 2
+print("현재 위치 %d %d" %(y, x))
+my_map[y][x] = 2
 # 1단계로 돌아가는 경우 
     # 1. 전진한 경우
     # 2. 왼쪽에 갈 수 있는 칸이 없는 경우
@@ -25,14 +26,14 @@ while cur_x == x and cur_y == y:
 
     print("1단계 실행")
     for i in range(4):
-        print("현재위치 %d %d" %(x, y))
+        print("현재위치 %d %d %d" %(y, x, d))
         d = character_direction[d - 1]
 
-        if(my_map[x + dx[d]][y + dy[d]] == 0):
+        if(my_map[y + dy[d]][x + dx[d]] == 0):
             print(x, y)
             x = x + dx[d]
             y = y + dy[d]
-            my_map[x + dx[d]][y + dy[d]] = 2
+            my_map[y + dy[d]][x + dx[d]] = 2
             movement += 1
             print("전진")
             break
@@ -42,7 +43,7 @@ while cur_x == x and cur_y == y:
 
     if(cur_x == x and cur_y == y):
         print("움직일 수 없다!")
-        if(my_map[x + dx[character_direction[d-2]]][y + dy[character_direction[d-2]]] == 2):
+        if(my_map[y + dy[character_direction[d-2]]][x + dx[character_direction[d-2]]] == 2):
             print("뒤로 한 칸 이동")
             x = x + dx[character_direction[d-2]]
             y = y + dy[character_direction[d-2]]
