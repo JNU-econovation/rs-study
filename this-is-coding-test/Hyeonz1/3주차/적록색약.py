@@ -9,6 +9,7 @@ total_red = 0
 total_blue = 0
 total_green = 0
 total_rg = 0
+
 # 상하좌우
     # 다음 방문 노드 만들기
 dcol = [-1, 1, 0, 0]
@@ -76,4 +77,4 @@ for colum in range(n):
             total_rg = bfs_weakness(painting, colum, row, visited, total_rg)
 
 print(total_red + total_blue + total_green, end = ' ')
-print(total_rg + total_blue)
+print(total_rg, total_blue)
