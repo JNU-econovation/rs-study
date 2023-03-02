@@ -1,0 +1,17 @@
+N,M=map(int, input().split())
+
+graph = [list(map(int, input().split())) for _ in range(M)]
+
+stack=[]
+
+for i in range(N):
+    for j in range(M):
+        if graph[i][j] == 1:
+            stack.append([i, j])
+
+def dfs():
+      while stack:
+           x, y = stack.pop()
+           if 0 <= x < N and 0 <= y < M and graph[x][y]==0:
+                graph[x][y]=1
+                
