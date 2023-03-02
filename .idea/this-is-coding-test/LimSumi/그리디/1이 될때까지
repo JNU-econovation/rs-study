@@ -1,0 +1,7 @@
+N,K=map(int,input().split())
+
+a=N%K
+b=(N-a)/K
+
+c=a+b
+print(c)

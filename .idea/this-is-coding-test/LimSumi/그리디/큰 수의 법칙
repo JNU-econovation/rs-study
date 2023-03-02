@@ -1,0 +1,12 @@
+N,M,K=map(int,input().split())
+arr=map(int, input.split())
+a=max(arr)
+arr.remove(a)
+b=max(arr)
+arr.append(a)
+c=M/(K+1)
+d=M%(K+1)
+
+sum=c*a*K + d*a + c*b
+
+print(sum)
