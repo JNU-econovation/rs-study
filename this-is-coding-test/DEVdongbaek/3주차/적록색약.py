@@ -64,7 +64,7 @@ for i in range(N):
 for i in range(N):
     for j in range(N):
         if handi_list[i][j] == 'R':
-            bfs(handi_list ,i, j, 'R')
+            bfs(handi_list , i, j, 'R')
             handi_cnt += 1            
             
         elif handi_list[i][j] == 'B':
