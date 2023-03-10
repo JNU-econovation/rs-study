@@ -1,0 +1,1 @@
+{"name":"Local: 용액","url":"/Users/hyeonji/rs-study/baekjoon/Hyeonz1/4주차/용액.py","tests":[{"id":1678446213096,"input":"5\n-99 -2 -1 4 98","output":"-99 98"},{"id":1678447588516,"input":"4\n-100 -2 -1 103","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/Users/hyeonji/rs-study/baekjoon/Hyeonz1/4주차/용액.py","group":"local","local":true}
