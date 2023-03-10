@@ -77,4 +77,4 @@ for colum in range(n):
             total_rg = bfs_weakness(painting, colum, row, visited, total_rg)
 
 print(total_red + total_blue + total_green, end = ' ')
-print(total_rg, total_blue)
+print(total_rg + total_blue)
