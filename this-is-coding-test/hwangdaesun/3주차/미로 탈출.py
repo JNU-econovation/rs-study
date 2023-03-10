@@ -11,8 +11,6 @@ dir = [(1,0),(0,1),(-1,0),(0,-1)]
 r = 0
 c = 0
 count = 0
-print(dir[0][1])
-print(dir[0][0])
 
 # 1이면 queue에 담아
 if(graph[r][c] == 1):

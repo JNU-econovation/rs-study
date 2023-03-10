@@ -1,7 +1,5 @@
-n,m = input().split()
-n = int(n)
-m = int(m)
-
+n,m = map(int,input().split())
+# row : r, C : column, d : 
 r,c,d = input().split()
 
 r = int(r)
