@@ -5,7 +5,7 @@ b = int(b)
 c = int(c)
 
 i = 1
-while d%a!=0 or d%b!=0 or d%c!=0 :
+while i%a!=0 or i%b!=0 or i%c!=0:
   i += 1
 
 print(i)

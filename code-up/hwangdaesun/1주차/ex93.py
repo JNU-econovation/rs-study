@@ -4,8 +4,6 @@ list_s = input().split()
 list = list(map(int, list_s))
 list.reverse()
 
-print(reversed(list))
-
 for i in list:
     print(i, end=" ")
 
