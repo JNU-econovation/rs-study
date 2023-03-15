@@ -1,7 +1,7 @@
 h,w = input().split()
 h = int(h)
 w = int(w)
-listlist = [[0 for j in range(h)] for i in range(w)]
+listlist = [[0 for j in range(w)] for i in range(h)]
 
 n = int(input())
 
@@ -21,3 +21,5 @@ for i in range(len(listlist)):
     for j in range(len(listlist[i])):
         print(int(listlist[i][j]), end=" ")
     print()
+
+# listlist = [[0 for j in range(w)] for i in range(h)]에서 w,h 주의!
