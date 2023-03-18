@@ -1,0 +1,10 @@
+N,M=map(int,input().split())
+array =[[for in range(11)] for in range(10)]
+array[N][M] =map(int, input().split())
+
+for i in array:
+    mini=min(i)
+    maxi=mini
+    if maxi<mini:
+        maxi=mini
+# 불가능
